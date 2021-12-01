@@ -1,0 +1,21 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-size: 100%;
+}
+.conteiner{
+  background-color: black;
+  width: 1920px;
+}
+.box{
+    background-color: white;
+    transition-property: all;
+    transition-delay: 0.5;
+    transition-duration: 4s;
+    transition-timing-function:ease ;
+
+}
+.box:hover{
+    background-color: blue;
+}
