@@ -1,21 +1,38 @@
 *{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-size: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
 }
-.conteiner{
-  background-color: black;
-  width: 1920px;
+body  {
+    background-image: url("../images/foto.jpg");
+    background-repeat: no-repeat;
+    background-size: 1920px;
 }
-.box{
-    background-color: white;
-    transition-property: all;
-    transition-delay: 0.5;
-    transition-duration: 4s;
-    transition-timing-function:ease ;
+.car{
+    margin:610px 0px ;
+    position: relative;
+    height: 0px;
+    transition: all 0,5s linear 0.5s;
+    animation: mymove 5s infinite
+}
+.car:hover{
+    width: 600;
+    background-color: brown;
+    color: white;
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 1400px;}
+}
+.flou{
+    margin:-300px 0px ;
+    position: relative;
+    height: 0px;
+    transition: all 0,4s linear 0.5s;
+}
+@keyframes move {
+  from{right: 0;}
+  to{right:500px ;}
 
-}
-.box:hover{
-    background-color: blue;
 }
